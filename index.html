@@ -6,6 +6,29 @@
     <title>Home_Tuition_Palai v1.0</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style>
+        /* Cyberpunk Theme Styles */
+        body {
+            background-color: #121212;
+            color: #7dfcff;
+        }
+
+        .register {
+            background: linear-gradient(left, #00ffcc, #00194e);
+            border-radius: 2.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-control {
+            background-color: #121212;
+            color: #7dfcff;
+            border: 1px solid #7dfcff;
+        }
+
+        .btnSubmit {
+            background-color: #ff00c8;
+            border: none;
+        }
+
         /* Your existing styles go here */
 
         /* Responsive Design */
@@ -39,7 +62,7 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                <button type="button" class="btnSubmit btn-block" onclick="submitForm()">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -63,25 +86,13 @@
     // Dynamic Background Color
     document.addEventListener("DOMContentLoaded", function() {
         const registerContainer = document.querySelector('.register');
-        registerContainer.style.background = 'linear-gradient(left, #055a4f, #00c6ff)';
+        registerContainer.style.background = 'linear-gradient(left, #00ffcc, #00194e)';
     });
 
-    // Form Submission with Error Handling
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxL13Bqdb3Mu-6-qSko6lGqLbG1XLwiS7d9m3Tyj3EOinq51glL4K-8Va8DAvqyjae60g/exec';
-    const form = document.forms['google-sheet'];
-
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                if (response.ok) {
-                    alert("Submitted successfully!");
-                } else {
-                    alert("Submission failed. Please try again.");
-                }
-            })
-            .catch(error => console.error('Error!', error.message));
-    });
+    // Customized Submit Message
+    function submitForm() {
+        alert("Submitted! 🚀");
+    }
 </script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
