@@ -1,6 +1,5 @@
 # Home Tuition Attendance System
 
-![Project Image](project_image.png)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
