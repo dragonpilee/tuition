@@ -1,7 +1,8 @@
 # Home Tuition Attendance System
 
-
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+---
 
 ## Table of Contents
 
@@ -13,60 +14,72 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+---
 
-The Home Tuition Attendance System is a web application designed to streamline attendance tracking for home tuition sessions. It provides a simple interface for tutors or administrators to log attendance records, making it easy to keep track of student attendance over time.
+## 📝 Introduction
 
-## Features
+The Home Tuition Attendance System is a simple web application designed to streamline attendance tracking for home tuition sessions. It provides an easy interface for tutors or administrators to log attendance records, making it simple to keep track of student attendance over time.
+
+---
+
+## ✨ Features
 
 - **Easy Attendance Logging**: Quickly record attendance by entering student names, hours, and dates.
-- **Automatic Timestamp**: The system automatically timestamps each attendance entry for accurate record-keeping.
-- **Responsive Design**: The application is designed to work seamlessly across various devices, allowing users to log attendance from anywhere.
+- **Automatic Timestamp**: Each attendance entry is timestamped for accurate record-keeping.
+- **Responsive Design**: Works seamlessly across devices (if styled with responsive CSS).
 
-## Tech Stack
+---
 
-- **Frontend**:
-  - HTML5
-  - CSS3 (Bootstrap)
-  - JavaScript (jQuery)
+## 🛠️ Tech Stack
 
-- **Backend**:
-  - Google Apps Script
+- **Frontend**:  
+  - HTML5  
+  - *(Optionally: CSS3, Bootstrap, JavaScript/jQuery for enhanced UI/UX)*
 
-- **Database**:
-  - Google Sheets
+- **Backend/Database**:  
+  - *(If used: Google Apps Script & Google Sheets for data storage)*
 
-## Installation
+> **Note:**  
+> This version uses only HTML for the interface. No backend or database is included.
 
-1. Navigate to the project directory:
+---
 
+## 🚀 Installation
+
+1. Download or clone the repository:
    ```bash
+   git clone https://github.com/your-username/home-tuition-attendance.git
    cd home-tuition-attendance
-Install dependencies:
+   ```
 
+2. Open `index.html` in your web browser.
 
-Copy code
-npm install
-Start the application:
+---
 
+## 💻 Usage
 
-Copy code
-npm start
-Access the application at http://localhost:3000 in your web browser.
+1. Open the application in your web browser.
+2. Enter the student's name, number of hours, and date of attendance.
+3. Click the "Submit" button to record the attendance.
+4. *(If connected to a backend, view attendance records in the corresponding Google Sheets spreadsheet.)*
 
-Usage
-Open the application in your web browser.
-Enter the student's name, number of hours, and date of attendance.
-Click the "Submit" button to record the attendance.
-View attendance records in the corresponding Google Sheets spreadsheet.
-Contributing
-Contributions are welcome! Here are a few ways you can contribute:
+---
 
-Submitting bug reports or feature requests
-Implementing new features or improvements
-Improving documentation
-Providing feedback on the project
+## 🤝 Contributing
+
+Contributions are welcome!  
+You can help by:
+- Submitting bug reports or feature requests
+- Implementing new features or improvements
+- Improving documentation
+- Providing feedback
+
 To contribute, fork the repository, make your changes, and submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
