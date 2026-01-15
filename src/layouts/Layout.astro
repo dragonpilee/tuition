@@ -1,0 +1,94 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<style is:global>
+			/* Cyberpunk Theme Styles */
+			body {
+				background-color: #121212;
+				color: #7dfcff;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.register {
+				background: linear-gradient(to right, #00ffcc, #00194e);
+				border-radius: 2.5rem;
+				box-shadow: 0 0 20px rgba(125, 252, 255, 0.2);
+				padding: 3rem;
+				margin-top: 10%;
+				width: 100%;
+				max-width: 600px;
+			}
+
+			.form-control {
+				background-color: #121212;
+				color: #7dfcff;
+				border: 1px solid #7dfcff;
+				border-radius: 0.5rem;
+			}
+
+			.form-control:focus {
+				background-color: #1a1a1a;
+				color: #7dfcff;
+				border-color: #ff00c8;
+				box-shadow: 0 0 10px rgba(255, 0, 200, 0.5);
+			}
+
+			.btnSubmit {
+				background-color: #ff00c8;
+				color: #fff;
+				border: none;
+				border-radius: 0.5rem;
+				padding: 0.75rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				transition: all 0.3s ease;
+				cursor: pointer;
+			}
+
+			.btnSubmit:hover {
+				background-color: #d400a7;
+				box-shadow: 0 0 15px rgba(255, 0, 200, 0.7);
+				transform: translateY(-2px);
+			}
+
+			.register-heading {
+				text-align: center;
+				margin-bottom: 2rem;
+				color: #7dfcff;
+				text-shadow: 0 0 10px rgba(125, 252, 255, 0.5);
+			}
+
+			/* Designed by Alan_Cyril Styles */
+			.designed-by {
+				text-align: center;
+				margin-top: 2rem;
+				color: #7dfcff;
+				font-size: 0.9rem;
+				opacity: 0.8;
+			}
+		</style>
+	</head>
+	<body>
+		<slot />
+		
+		<div class="designed-by">
+			<p>Designed with love by Alan_Cyril</p>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,46 +1,48 @@
-# Home Tuition Attendance System
+# Home Tuition Attendance System v2.0 (Astro)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![HTML5](https://img.shields.io/badge/Frontend-HTML5-orange)
-![Google Apps Script](https://img.shields.io/badge/Backend-Google%20Apps%20Script-blue)
-![Google Sheets](https://img.shields.io/badge/Database-Google%20Sheets-brightgreen)
-![Responsive](https://img.shields.io/badge/Design-Responsive-lightgrey)
+![Astro](https://img.shields.io/badge/Frontend-Astro-ff5d01)
+![Docker](https://img.shields.io/badge/Infrastructure-Docker-2496ed)
+![Cyberpunk](https://img.shields.io/badge/Design-Cyberpunk-7dfcff)
 
 ---
 
 ## 📝 Introduction
 
-**Home Tuition Attendance System** streamlines attendance tracking for home tuition sessions. It features a simple HTML interface for tutors to log attendance, with automated timestamping and a responsive design. All data is stored and managed using Google Apps Script and Google Sheets.
+**Home Tuition Attendance System v2.0** is a high-performance web application built with **Astro** and **Node.js**. It features a stunning Cyberpunk-inspired interface for tutors to log attendance, with real-time feedback and containerized deployment.
 
 ---
 
 ## ✨ Features
 
-- **Easy Attendance Logging**: Enter student name, hours, and date.
-- **Automated Timestamping**: Each entry is automatically timestamped.
-- **Responsive Design**: Works on desktop and mobile browsers.
-- **Google Sheets Integration**: Attendance records are saved directly to a Google Sheet via Apps Script.
+- **Component-Based UI**: Built with Astro for maximum speed and modularity.
+- **Cyberpunk Aesthetics**: Vibrant neon design with glassmorphism effects.
+- **AJAX Submissions**: Real-time form logging with loading states and success/error notifications.
+- **Dockerized**: Fully containerized environment for consistent development and deployment.
+- **Automated Timestamping**: Managed via Google Apps Script (backend).
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML5 (and optional CSS for styling)
-- **Backend**: Google Apps Script (handles form submissions and data storage)
+- **Frontend**: [Astro](https://astro.build/)
+- **Infrastructure**: [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/)
+- **Styling**: Bootstrap 4 + Custom Cyberpunk CSS
+- **Backend**: Google Apps Script
 - **Database**: Google Sheets
 
 ---
 
-## 🚀 Usage
+## 🚀 How to Run
 
-1. **Deploy the Apps Script Web App**:
-   - Copy the HTML and Apps Script files into your Google Apps Script project.
-   - Link the script to your Google Sheet for attendance storage.
-   - Deploy as a web app (set "Anyone with the link" can access).
+### Prerequisite: Docker
+Make sure you have Docker and Docker Compose installed.
 
-2. **Open the Web App**:
-   - Fill in the attendance form (student name, hours, date).
-   - Submit to log attendance; data is saved to Google Sheets with a timestamp.
+### Development Mode
+```bash
+docker-compose up
+```
+The app will be available at `http://localhost:4321`.
 
 ---
 
@@ -50,4 +52,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Built with HTML and Google Apps Script — Streamline your home tuition attendance today!**
+**Built with Astro & Docker — Modernizing home tuition tracking!**
