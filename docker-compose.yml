@@ -10,3 +10,5 @@ services:
       - "4321:4321"
     environment:
       - HOST=0.0.0.0
+    env_file:
+      - .env

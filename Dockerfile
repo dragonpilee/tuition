@@ -9,6 +9,8 @@ EXPOSE 4321
 CMD ["npm", "run", "dev", "--", "--host"]
 
 FROM base AS build
+ARG PUBLIC_SCRIPT_URL
+ENV PUBLIC_SCRIPT_URL=$PUBLIC_SCRIPT_URL
 RUN npm install
 COPY . .
 RUN npm run build

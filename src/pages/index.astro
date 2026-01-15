@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const PUBLIC_SCRIPT_URL = import.meta.env.PUBLIC_SCRIPT_URL || '';
 ---
 
 <Layout title="Home_Tuition_Palai v1.0">
@@ -30,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
 	</div>
 </Layout>
 
-<script>
+<script define:vars={{ PUBLIC_SCRIPT_URL }}>
 	// Dynamic Date and Form Submission
 	document.addEventListener("DOMContentLoaded", function() {
 		// Set current date
@@ -45,8 +46,8 @@ import Layout from '../layouts/Layout.astro';
 		const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
 		const statusMessage = document.getElementById('statusMessage');
 
-		// Replace with your Google Apps Script Web App URL
-		const SCRIPT_URL = ''; 
+		// Injected via define:vars
+		const SCRIPT_URL = PUBLIC_SCRIPT_URL; 
 
 		form?.addEventListener('submit', async (e) => {
 			e.preventDefault();
